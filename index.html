@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunch Spinner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <p class="eyebrow">TODAY'S LUNCH</p>
+      <h1>What should I eat for lunch?</h1>
+      <p class="intro">Hold the button to charge up, then release to spin.</p>
+
+      <section class="wheel-area" aria-label="Lunch choice spinner">
+        <div class="pointer" aria-hidden="true"></div>
+        <div class="wheel" id="wheel" aria-label="Lunch spinner">
+          <div class="label l1">Noodles</div><div class="label l2">Burger</div><div class="label l3">Sushi</div><div class="label l4">Pizza</div><div class="label l5">Salad</div><div class="label l6">Tacos</div><div class="label l7">Fried Rice</div><div class="label l8">Sandwich</div>
+          <div class="hub">LUNCH</div>
+        </div>
+      </section>
+
+      <p class="status" id="status" aria-live="polite">Ready to choose?</p>
+      <div class="meter" aria-hidden="true"><div class="meter-fill" id="meterFill"></div></div>
+      <button id="chargeButton" type="button">Hold to charge</button>
+      <p class="hint">A quick tap gives a light spin. Hold longer for more power.</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
